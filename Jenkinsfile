@@ -24,7 +24,7 @@ pipeline {
                script{
                  withAWS(credentials: 'awscred',region: 'ap-south-1') 
                  {
-                    s3Upload(bucket: 'akcdevops-project1', path: 'target/project-2-0.0.1-SNAPSHOT.war',file: 'target/project-2-0.0.1-SNAPSHOT.war')
+                    s3Upload(bucket: 'akcdevops-project1', path: 'target/project2-0.0.1-SNAPSHOT.war',file: 'target/project2-0.0.1-SNAPSHOT.war')
                  }
                } 
             }
